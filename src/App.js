@@ -1,28 +1,26 @@
-import { useState } from "react";
-import H5 from "./bai4/H5";
+import { useState } from 'react'
+import Content from "./Content";
+import Cuaso from './name/Cuaso';
+import Image from './name/Image';
+import Hoang from './name/Image';
 
-const gifts= [
-  'honda',
-  'yamaha',
-  'toyota',
-  'mercedes'
-]
+
+
+
 function App() {
+  
+  const[show, setShow] = useState(false)
 
-  // const [gift, setGift]= useState()
-  // const handleRandom=()=> {
-  //  const index=Math.floor(Math.random()*gifts.length)
-  //  setGift(gifts[index])
-  // }
-// console.log(gift);
   return(
-    <div style={{padding: 30}}>
-      <h1>Random Gift</h1>
-      <button >Lum thuong</button>
-       {/* <h1>{gift}</h1> */}
-       <H5/>
+    <div style={{ padding: 30}}>
+      {/* <button onClick={() => setShow(!show)}>Show</button>
+     { show && <Content/>}  */}
+  {/* <Content/> */}
+    <Image/>
+    {/* <Cuaso/> */}
     </div>
   )
+    
 }
 
 export default App;
